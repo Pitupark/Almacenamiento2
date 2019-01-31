@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et1"
+        android:hint="Escriba el nombre de su archivo de texto"
+        android:layout_width="380dp"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:hint="...."
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="top"
+        android:inputType="textMultiLine" />
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnborrar"
+            android:layout_width="wrap_content"
+            android:text="Borrar"
+            android:onClick="Borrar"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:onClick="Guardar"/>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Consultar"
+            android:onClick="Cargar"/>
+    </LinearLayout>
+
+</LinearLayout>
